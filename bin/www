@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var { getApp } = require("../src/index");
+
+getApp().then(() => console.log('app running...'));
