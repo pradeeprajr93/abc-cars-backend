@@ -44,8 +44,8 @@ carDetailSchema.plugin(toJSON);
 carDetailSchema.plugin(paginate);
 
 /**
- * Check if email is taken
- * @param {productId} email - The user's email
+ * Check if productId is taken
+ * @param {productId} productId - The product's id
  * @returns {Promise<boolean>}
  */
 carDetailSchema.statics.isProductIdTaken = async function (productId) {
@@ -54,7 +54,7 @@ carDetailSchema.statics.isProductIdTaken = async function (productId) {
 };
 
 /**
- * @typedef User
+ * @typedef CarDetail
  */
 const CarDetail = mongoose.model('CarDetail', carDetailSchema);
 
